@@ -24,7 +24,10 @@ const ACTIVITIES = {
     }
 };
 
-client.on("ready", () => console.log("Bot is online!"));
+client.on('ready', () => {
+    console.log(`done`)
+    client.user.setActivity(`Made By PRO`, {type: 'PLAYING'})
+})
 client.on("warn", console.warn);
 client.on("error", console.error);
 
